@@ -15,6 +15,7 @@
 		CD36A274252BD52A000C51CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */; };
 		CD36A27F252BD52A000C51CC /* eliheineman_500pxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A27E252BD52A000C51CC /* eliheineman_500pxTests.swift */; };
 		CD36A28A252BD52A000C51CC /* eliheineman_500pxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A289252BD52A000C51CC /* eliheineman_500pxUITests.swift */; };
+		CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F80252CFC8100557295 /* ApiKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CD36A285252BD52A000C51CC /* eliheineman-500pxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eliheineman-500pxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD36A289252BD52A000C51CC /* eliheineman_500pxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eliheineman_500pxUITests.swift; sourceTree = "<group>"; };
 		CD36A28B252BD52A000C51CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDAB8F80252CFC8100557295 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,11 @@
 			children = (
 				CD36A267252BD526000C51CC /* AppDelegate.swift */,
 				CD36A269252BD526000C51CC /* SceneDelegate.swift */,
-				CD36A26B252BD526000C51CC /* ViewController.swift */,
-				CD36A26D252BD526000C51CC /* Main.storyboard */,
+				CDAB8F7F252CFB9D00557295 /* Controllers */,
+				CDAB8F7B252CFB8900557295 /* Views */,
 				CD36A270252BD52A000C51CC /* Assets.xcassets */,
-				CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */,
 				CD36A275252BD52A000C51CC /* Info.plist */,
+				CDAB8F88252CFC8900557295 /* Models */,
 			);
 			path = "eliheineman-500px";
 			sourceTree = "<group>";
@@ -126,6 +128,31 @@
 				CD36A28B252BD52A000C51CC /* Info.plist */,
 			);
 			path = "eliheineman-500pxUITests";
+			sourceTree = "<group>";
+		};
+		CDAB8F7B252CFB8900557295 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD36A26D252BD526000C51CC /* Main.storyboard */,
+				CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDAB8F7F252CFB9D00557295 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD36A26B252BD526000C51CC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CDAB8F88252CFC8900557295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDAB8F80252CFC8100557295 /* ApiKey.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,7 @@
 			files = (
 				CD36A26C252BD526000C51CC /* ViewController.swift in Sources */,
 				CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */,
+				CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */,
 				CD36A26A252BD526000C51CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
