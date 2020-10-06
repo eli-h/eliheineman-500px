@@ -16,6 +16,7 @@
 		CD36A27F252BD52A000C51CC /* eliheineman_500pxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A27E252BD52A000C51CC /* eliheineman_500pxTests.swift */; };
 		CD36A28A252BD52A000C51CC /* eliheineman_500pxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A289252BD52A000C51CC /* eliheineman_500pxUITests.swift */; };
 		CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F80252CFC8100557295 /* ApiKey.swift */; };
+		CDAB8F90252D070900557295 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F8F252D070900557295 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CD36A289252BD52A000C51CC /* eliheineman_500pxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eliheineman_500pxUITests.swift; sourceTree = "<group>"; };
 		CD36A28B252BD52A000C51CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAB8F80252CFC8100557295 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		CDAB8F8F252D070900557295 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CDAB8F80252CFC8100557295 /* ApiKey.swift */,
+				CDAB8F8F252D070900557295 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAB8F90252D070900557295 /* Constants.swift in Sources */,
 				CD36A26C252BD526000C51CC /* ViewController.swift in Sources */,
 				CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */,
 				CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */,
