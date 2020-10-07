@@ -18,7 +18,6 @@ class PhotoInfoTableViewCell: UITableViewCell {
     }
     
     private func formatDate(_ date: String) -> String {
-        //2020-05-07T00:00:00+00:00
         var newDate = date
         if let tRange = newDate.range(of: "T") {
             newDate.removeSubrange(tRange.lowerBound..<newDate.endIndex)
