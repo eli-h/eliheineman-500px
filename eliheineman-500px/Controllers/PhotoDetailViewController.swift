@@ -73,8 +73,8 @@ extension PhotoDetailViewController: UITableViewDataSource {
                 state = "\(state) • "
             }
             
-            if !about.isEmpty {
-                about = "Photography hasn't written anything about themselves :("
+            if about.isEmpty {
+                about = "Photographer hasn't written anything about themselves :("
             }
             
             cell.configure(
