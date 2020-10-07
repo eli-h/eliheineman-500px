@@ -8,12 +8,22 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-    
+    @IBOutlet var usernameLabel: UILabel!
+    @IBOutlet var aboutLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var displayPicture: UIImageView!
+
     static let identifier = "UserTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    public func configure(imageLink: String, about: String, location: String, username: String) {
+        displayPicture.sd_setImage(with: URL(string: imageLink), placeholderImage: UIImage(systemName: "person.circle"))
+        usernameLabel.text = username
+        aboutLabel.text = about
+        locationLabel.text = location
     }
     
     static func nib() -> UINib {

@@ -17,17 +17,8 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    public func configure(with imageLink: String, _ nsfw: Bool = false) {
-        //imageView.sd_setImage(with: URL(string: imageLink), placeholderImage: UIImage(systemName: "tortoise"))
-        imageView.sd_setImage(with: URL(string: imageLink), placeholderImage: UIImage(systemName: "tortoise"), options: .continueInBackground) { (image, error, cache, url) in
-            if nsfw {
-                let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
-                let blurView = UIVisualEffectView(effect: blurEffect)
-                blurView.frame = self.imageView.bounds;
-                self.imageView.addSubview(blurView)
-            }
-        }
-
+    public func configure(with imageLink: String) {
+        imageView.sd_setImage(with: URL(string: imageLink), placeholderImage: UIImage(systemName: "tortoise"))
     }
     
     static func nib() -> UINib {

@@ -38,13 +38,58 @@ extension PhotoDetailViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotoDetailTableViewCell.identifier) as! PhotoDetailTableViewCell
-            cell.configure(imageLink: safePhoto.image_url[0], title: safePhoto.name)
+            
+            cell.configure(
+                imageLink: safePhoto.image_url[0],
+                title: safePhoto.name,
+                name: "by \(safePhoto.user.fullname)"
+            )
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: PhotoInfoTableViewCell.identifier) as! PhotoInfoTableViewCell
+            
+            var location = safePhoto.location ?? "No location"
+            
+            if location.isEmpty {
+                location = "No location"
+            }
+            
+            cell.configure(
+                description: safePhoto.description,
+                location: location,
+                date: safePhoto.taken_at ?? "No date"
+            )
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier) as! UserTableViewCell
+            
+            var city = safePhoto.user.city ?? ""
+            var state = safePhoto.user.state ?? ""
+            let country = safePhoto.user.country
+            
+            var about = safePhoto.user.about ?? ""
+            
+            if !city.isEmpty {
+                city = "\(city) • "
+            }
+            
+            if !state.isEmpty {
+                state = "\(state) • "
+            }
+            
+            if !about.isEmpty {
+                about = "Photography hasn't written anything about themselves :("
+            }
+            
+            cell.configure(
+                imageLink: safePhoto.user.userpic_url,
+                about: about,
+                location: "\(city)\(state)\(country)",
+                username: safePhoto.user.username
+            )
+            
             return cell
         }
     }

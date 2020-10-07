@@ -186,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				CD36A26B252BD526000C51CC /* ViewController.swift */,
-				CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */,
 				CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */,
+				CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */,
 				CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */,
 				CDFF341A252D8032002C8207 /* PhotoInfoTableViewCell.swift */,
 				CDFF3424252D805E002C8207 /* UserTableViewCell.swift */,
