@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The description of the photo goes here and it is a really good description!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-gZ-yog">
-                        <rect key="frame" x="15" y="15" width="290" height="90"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The description of the photo goes here and it is a really good description!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-gZ-yog">
+                        <rect key="frame" x="15" y="15" width="290" height="80"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <constraint firstItem="2h4-ht-Fci" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CeB-XD-IVT"/>
                     <constraint firstItem="Sab-gZ-yog" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="F45-jv-4JJ"/>
                     <constraint firstItem="Sab-gZ-yog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gDb-pb-dkE"/>
-                    <constraint firstItem="2h4-ht-Fci" firstAttribute="top" secondItem="Sab-gZ-yog" secondAttribute="bottom" constant="15" id="lAq-OS-fZz"/>
+                    <constraint firstItem="2h4-ht-Fci" firstAttribute="top" secondItem="Sab-gZ-yog" secondAttribute="bottom" constant="25" id="lAq-OS-fZz"/>
                     <constraint firstAttribute="trailing" secondItem="Sab-gZ-yog" secondAttribute="trailing" constant="15" id="lJf-hb-guI"/>
                 </constraints>
             </tableViewCellContentView>

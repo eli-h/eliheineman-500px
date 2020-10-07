@@ -14,7 +14,7 @@ protocol ApiManagerDelegate {
 
 struct ApiManager {
     var pageToLoad = 1
-    let photoUrl = "https://api.500px.com/v1/photos?feature=popular&image_size=200"
+    let photoUrl = "https://api.500px.com/v1/photos?feature=popular"
     var delegate: ApiManagerDelegate?
 
     mutating func fetchPhotos() {

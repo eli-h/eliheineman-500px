@@ -17,14 +17,8 @@ class PhotoDetailViewController: UIViewController {
         photoDetailTableView.register(PhotoDetailTableViewCell.nib(), forCellReuseIdentifier: PhotoDetailTableViewCell.identifier)
         photoDetailTableView.register(PhotoInfoTableViewCell.nib(), forCellReuseIdentifier: PhotoInfoTableViewCell.identifier)
         photoDetailTableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.identifier)
-        photoDetailTableView.delegate = self
         photoDetailTableView.dataSource = self
     }
-
-}
-
-extension PhotoDetailViewController: UITableViewDelegate {
-    
 }
 
 extension PhotoDetailViewController: UITableViewDataSource {
