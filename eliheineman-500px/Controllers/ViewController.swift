@@ -59,7 +59,9 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as! PhotoCollectionViewCell
         
-        cell.configure(with: photos[indexPath.row].image_url[0])
+        let nsfw = photos[indexPath.row].nsfw
+        
+        cell.configure(with: photos[indexPath.row].image_url[0], nsfw)
         
         return cell
     }

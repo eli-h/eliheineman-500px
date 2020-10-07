@@ -25,6 +25,10 @@
 		CDFF3409252D62AD002C8207 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */; };
 		CDFF3412252D668D002C8207 /* PhotoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */; };
 		CDFF3413252D668D002C8207 /* PhotoDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */; };
+		CDFF341C252D8032002C8207 /* PhotoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF341A252D8032002C8207 /* PhotoInfoTableViewCell.swift */; };
+		CDFF341D252D8032002C8207 /* PhotoInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF341B252D8032002C8207 /* PhotoInfoTableViewCell.xib */; };
+		CDFF3426252D805E002C8207 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF3424252D805E002C8207 /* UserTableViewCell.swift */; };
+		CDFF3427252D805E002C8207 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF3425252D805E002C8207 /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailTableViewCell.xib; sourceTree = "<group>"; };
+		CDFF341A252D8032002C8207 /* PhotoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		CDFF341B252D8032002C8207 /* PhotoInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoInfoTableViewCell.xib; sourceTree = "<group>"; };
+		CDFF3424252D805E002C8207 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		CDFF3425252D805E002C8207 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		EFA22A0715BFD36BD89D44D5 /* Pods-eliheineman-500px.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eliheineman-500px.debug.xcconfig"; path = "Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +175,8 @@
 				CD36A26D252BD526000C51CC /* Main.storyboard */,
 				CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */,
 				CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */,
+				CDFF341B252D8032002C8207 /* PhotoInfoTableViewCell.xib */,
+				CDFF3425252D805E002C8207 /* UserTableViewCell.xib */,
 				CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -176,9 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				CD36A26B252BD526000C51CC /* ViewController.swift */,
-				CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */,
 				CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */,
+				CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */,
 				CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */,
+				CDFF341A252D8032002C8207 /* PhotoInfoTableViewCell.swift */,
+				CDFF3424252D805E002C8207 /* UserTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,7 +323,9 @@
 				CDFF3413252D668D002C8207 /* PhotoDetailTableViewCell.xib in Resources */,
 				CD36A274252BD52A000C51CC /* LaunchScreen.storyboard in Resources */,
 				CDFF33F6252D376D002C8207 /* PhotoCollectionViewCell.xib in Resources */,
+				CDFF3427252D805E002C8207 /* UserTableViewCell.xib in Resources */,
 				CD36A271252BD52A000C51CC /* Assets.xcassets in Resources */,
+				CDFF341D252D8032002C8207 /* PhotoInfoTableViewCell.xib in Resources */,
 				CD36A26F252BD526000C51CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,10 +397,12 @@
 				CDFF33F5252D376D002C8207 /* PhotoCollectionViewCell.swift in Sources */,
 				CD36A26C252BD526000C51CC /* ViewController.swift in Sources */,
 				CDAB8F95252D0AB900557295 /* PhotoData.swift in Sources */,
+				CDFF3426252D805E002C8207 /* UserTableViewCell.swift in Sources */,
 				CDAB8F9A252D1DB800557295 /* ApiManager.swift in Sources */,
 				CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */,
 				CDFF3409252D62AD002C8207 /* PhotoDetailViewController.swift in Sources */,
 				CDFF3412252D668D002C8207 /* PhotoDetailTableViewCell.swift in Sources */,
+				CDFF341C252D8032002C8207 /* PhotoInfoTableViewCell.swift in Sources */,
 				CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */,
 				CD36A26A252BD526000C51CC /* SceneDelegate.swift in Sources */,
 			);
