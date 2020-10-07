@@ -1,0 +1,6 @@
+framework module Pods_eliheineman_500px {
+  umbrella header "Pods-eliheineman-500px-umbrella.h"
+
+  export *
+  module * { export * }
+}

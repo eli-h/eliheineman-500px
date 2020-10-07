@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29367302A560BA5B213D4649 /* Pods_eliheineman_500px.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63D4D15155FCCBDB7A7E76A /* Pods_eliheineman_500px.framework */; };
 		CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A267252BD526000C51CC /* AppDelegate.swift */; };
 		CD36A26A252BD526000C51CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A269252BD526000C51CC /* SceneDelegate.swift */; };
 		CD36A26C252BD526000C51CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A26B252BD526000C51CC /* ViewController.swift */; };
@@ -17,6 +18,10 @@
 		CD36A28A252BD52A000C51CC /* eliheineman_500pxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36A289252BD52A000C51CC /* eliheineman_500pxUITests.swift */; };
 		CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F80252CFC8100557295 /* ApiKey.swift */; };
 		CDAB8F90252D070900557295 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F8F252D070900557295 /* Constants.swift */; };
+		CDAB8F95252D0AB900557295 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F94252D0AB900557295 /* PhotoData.swift */; };
+		CDAB8F9A252D1DB800557295 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F99252D1DB800557295 /* ApiManager.swift */; };
+		CDFF33F5252D376D002C8207 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */; };
+		CDFF33F6252D376D002C8207 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DB4B2C1D3125223796B3EA0 /* Pods-eliheineman-500px.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eliheineman-500px.release.xcconfig"; path = "Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px.release.xcconfig"; sourceTree = "<group>"; };
+		A63D4D15155FCCBDB7A7E76A /* Pods_eliheineman_500px.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eliheineman_500px.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD36A264252BD526000C51CC /* eliheineman-500px.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eliheineman-500px.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD36A267252BD526000C51CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD36A269252BD526000C51CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +60,11 @@
 		CD36A28B252BD52A000C51CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAB8F80252CFC8100557295 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		CDAB8F8F252D070900557295 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CDAB8F94252D0AB900557295 /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		CDAB8F99252D1DB800557295 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EFA22A0715BFD36BD89D44D5 /* Pods-eliheineman-500px.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eliheineman-500px.debug.xcconfig"; path = "Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29367302A560BA5B213D4649 /* Pods_eliheineman_500px.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BE63631F53FE9AC4792176B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A63D4D15155FCCBDB7A7E76A /* Pods_eliheineman_500px.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD36A25B252BD526000C51CC = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +108,8 @@
 				CD36A27D252BD52A000C51CC /* eliheineman-500pxTests */,
 				CD36A288252BD52A000C51CC /* eliheineman-500pxUITests */,
 				CD36A265252BD526000C51CC /* Products */,
+				FDDA920B68DAF217FB434D8E /* Pods */,
+				4BE63631F53FE9AC4792176B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +130,9 @@
 				CD36A269252BD526000C51CC /* SceneDelegate.swift */,
 				CDAB8F7F252CFB9D00557295 /* Controllers */,
 				CDAB8F7B252CFB8900557295 /* Views */,
+				CDAB8F88252CFC8900557295 /* Models */,
 				CD36A270252BD52A000C51CC /* Assets.xcassets */,
 				CD36A275252BD52A000C51CC /* Info.plist */,
-				CDAB8F88252CFC8900557295 /* Models */,
 			);
 			path = "eliheineman-500px";
 			sourceTree = "<group>";
@@ -136,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				CD36A26D252BD526000C51CC /* Main.storyboard */,
+				CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */,
 				CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -145,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				CD36A26B252BD526000C51CC /* ViewController.swift */,
+				CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,8 +179,19 @@
 			children = (
 				CDAB8F80252CFC8100557295 /* ApiKey.swift */,
 				CDAB8F8F252D070900557295 /* Constants.swift */,
+				CDAB8F94252D0AB900557295 /* PhotoData.swift */,
+				CDAB8F99252D1DB800557295 /* ApiManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FDDA920B68DAF217FB434D8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFA22A0715BFD36BD89D44D5 /* Pods-eliheineman-500px.debug.xcconfig */,
+				1DB4B2C1D3125223796B3EA0 /* Pods-eliheineman-500px.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD36A28E252BD52A000C51CC /* Build configuration list for PBXNativeTarget "eliheineman-500px" */;
 			buildPhases = (
+				FE41239D49B7F35AFAB20820 /* [CP] Check Pods Manifest.lock */,
 				CD36A260252BD526000C51CC /* Sources */,
 				CD36A261252BD526000C51CC /* Frameworks */,
 				CD36A262252BD526000C51CC /* Resources */,
+				BF1C56FB52DE9503F9B52E99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD36A274252BD52A000C51CC /* LaunchScreen.storyboard in Resources */,
+				CDFF33F6252D376D002C8207 /* PhotoCollectionViewCell.xib in Resources */,
 				CD36A271252BD52A000C51CC /* Assets.xcassets in Resources */,
 				CD36A26F252BD526000C51CC /* Main.storyboard in Resources */,
 			);
@@ -283,13 +322,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF1C56FB52DE9503F9B52E99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE41239D49B7F35AFAB20820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eliheineman-500px-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD36A260252BD526000C51CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDAB8F90252D070900557295 /* Constants.swift in Sources */,
+				CDFF33F5252D376D002C8207 /* PhotoCollectionViewCell.swift in Sources */,
 				CD36A26C252BD526000C51CC /* ViewController.swift in Sources */,
+				CDAB8F95252D0AB900557295 /* PhotoData.swift in Sources */,
+				CDAB8F9A252D1DB800557295 /* ApiManager.swift in Sources */,
 				CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */,
 				CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */,
 				CD36A26A252BD526000C51CC /* SceneDelegate.swift in Sources */,
@@ -465,6 +549,7 @@
 		};
 		CD36A28F252BD52A000C51CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA22A0715BFD36BD89D44D5 /* Pods-eliheineman-500px.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,6 +569,7 @@
 		};
 		CD36A290252BD52A000C51CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB4B2C1D3125223796B3EA0 /* Pods-eliheineman-500px.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
