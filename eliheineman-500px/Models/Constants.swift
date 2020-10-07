@@ -8,5 +8,5 @@
 import Foundation
 
 struct K {
-    static let popular = "Popular"
+    static let photoDetailIdentifier = "PhotoDetail"
 }

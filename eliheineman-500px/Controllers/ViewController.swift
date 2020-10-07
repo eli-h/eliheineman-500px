@@ -20,17 +20,25 @@ class ViewController: UIViewController {
         photoCollectionView.register(PhotoCollectionViewCell.nib(), forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier)
         photoCollectionView.delegate = self
         photoCollectionView.dataSource = self
-        photoCollectionView.prefetchDataSource = self
         
         apiManager.delegate = self
         apiManager.fetchPhotos()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PhotoDetailViewController
+        if let indexPath = photoCollectionView.indexPathsForSelectedItems?.first {
+            let selectedPhoto = photos[indexPath.row]
+            vc.photo = selectedPhoto
+        }
     }
 }
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("photo tapped")
+        collectionView.selectItem(at: indexPath, animated: false, scrollPosition: .bottom)
+        performSegue(withIdentifier: K.photoDetailIdentifier, sender: self)
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -38,7 +46,6 @@ extension ViewController: UICollectionViewDelegate {
         let height = scrollView.contentSize.height
         
         if offsetY > height - scrollView.frame.size.height {
-            print("reached end of page")
             apiManager.fetchPhotos()
         }
     }
@@ -55,16 +62,6 @@ extension ViewController: UICollectionViewDataSource {
         cell.configure(with: photos[indexPath.row].image_url[0])
         
         return cell
-    }
-}
-
-extension ViewController: UICollectionViewDelegateFlowLayout {
-    
-}
-
-extension ViewController: UICollectionViewDataSourcePrefetching {
-    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        print("Prefetch called")
     }
 }
 

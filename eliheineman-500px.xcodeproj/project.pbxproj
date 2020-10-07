@@ -22,6 +22,9 @@
 		CDAB8F9A252D1DB800557295 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAB8F99252D1DB800557295 /* ApiManager.swift */; };
 		CDFF33F5252D376D002C8207 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */; };
 		CDFF33F6252D376D002C8207 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */; };
+		CDFF3409252D62AD002C8207 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */; };
+		CDFF3412252D668D002C8207 /* PhotoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */; };
+		CDFF3413252D668D002C8207 /* PhotoDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		CDAB8F99252D1DB800557295 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailTableViewCell.xib; sourceTree = "<group>"; };
 		EFA22A0715BFD36BD89D44D5 /* Pods-eliheineman-500px.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eliheineman-500px.debug.xcconfig"; path = "Target Support Files/Pods-eliheineman-500px/Pods-eliheineman-500px.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +166,7 @@
 			children = (
 				CD36A26D252BD526000C51CC /* Main.storyboard */,
 				CDFF33F4252D376D002C8207 /* PhotoCollectionViewCell.xib */,
+				CDFF3411252D668D002C8207 /* PhotoDetailTableViewCell.xib */,
 				CD36A272252BD52A000C51CC /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -169,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				CD36A26B252BD526000C51CC /* ViewController.swift */,
+				CDFF3408252D62AD002C8207 /* PhotoDetailViewController.swift */,
 				CDFF33F3252D376D002C8207 /* PhotoCollectionViewCell.swift */,
+				CDFF3410252D668D002C8207 /* PhotoDetailTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFF3413252D668D002C8207 /* PhotoDetailTableViewCell.xib in Resources */,
 				CD36A274252BD52A000C51CC /* LaunchScreen.storyboard in Resources */,
 				CDFF33F6252D376D002C8207 /* PhotoCollectionViewCell.xib in Resources */,
 				CD36A271252BD52A000C51CC /* Assets.xcassets in Resources */,
@@ -375,6 +385,8 @@
 				CDAB8F95252D0AB900557295 /* PhotoData.swift in Sources */,
 				CDAB8F9A252D1DB800557295 /* ApiManager.swift in Sources */,
 				CD36A268252BD526000C51CC /* AppDelegate.swift in Sources */,
+				CDFF3409252D62AD002C8207 /* PhotoDetailViewController.swift in Sources */,
+				CDFF3412252D668D002C8207 /* PhotoDetailTableViewCell.swift in Sources */,
 				CDAB8F81252CFC8100557295 /* ApiKey.swift in Sources */,
 				CD36A26A252BD526000C51CC /* SceneDelegate.swift in Sources */,
 			);

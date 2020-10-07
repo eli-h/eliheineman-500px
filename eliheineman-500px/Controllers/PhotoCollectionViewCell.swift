@@ -22,7 +22,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     }
     
     static func nib() -> UINib {
-        return UINib(nibName: "PhotoCollectionViewCell", bundle: nil)
+        return UINib(nibName: identifier, bundle: nil)
     }
 
 }
